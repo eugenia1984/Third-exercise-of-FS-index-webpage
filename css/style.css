@@ -1,0 +1,112 @@
+/***** Reset *****/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: rgb(92, 175, 235);
+  --secondary: rgba(255, 255, 255, 0.974);
+  --bg-primary: rgb(251, 236, 211);
+}
+
+.contenedor {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  background-color:var(--bg-primary);
+  overflow: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+/***** Barra de Menú *****/
+nav.menu-principal {
+  margin: 1rem;
+  width: 60%;
+}
+
+nav.menu-principal ul {
+  width: 100%;
+  overflow: auto;
+}
+
+nav.menu-principal ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+nav.menu-principal ul li a {
+  text-decoration: none;
+}
+
+nav.menu-principal ul li a:hover {
+  color: #000;
+}
+
+/****** Sección Contacto****/
+.section-contacto {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.section-contacto col {
+  height: auto;
+}
+
+/***** Título*****/
+.section-titulo {
+  margin: 0.25rem 1.5rem;
+  font-size: 1.50rem;
+}
+
+p {
+  padding: 0 0 0.75rem 1.5rem;
+  font-size: 0.75rem;
+}
+
+.col {
+  width: 50%;
+  float: left;
+}
+
+/****** Link Botón *****/
+
+.btn-contacto {
+  background-color: var(--primary);
+  border-radius: 0.25rem;
+  color: var(--secondary);
+  margin: 2rem;
+  padding: 0.50rem;
+  text-decoration: none;
+}
+
+/***** Imagen*****/
+img {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 3rem;
+
+}
+
+/****** Media Querie para dispositivos de hasta 599px de ancho*******/
+@media only screen and (max-width: 599px) {
+.contenedor {
+  width: 90%;
+}
+nav.menu-principal ul li {
+  display: block;
+  font-size: 0.75rem;
+}
+/***** Título*****/
+.section-titulo {
+  margin: 0.25rem 1rem;
+  font-size: 0.75rem;
+}
+p {
+  padding: 0 0 0.75rem 1rem;
+}
+
+}
